@@ -1,0 +1,38 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+}
+
+.cube-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cube-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 255, 0, 0.7);
+}
