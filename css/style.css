@@ -22,17 +22,30 @@ footer {
 }
 
 .cube-img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 10px;
   display: block;
   margin: 0 auto;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 1s ease, box-shadow 0.3s ease;
 }
 
 .cube-img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 25px rgba(255, 255, 0, 0.7);
+}
+
+h2:hover {
+  color: aqua;
+}
+
+.rotate {
+  transform: rotateY(360deg);
+}
+
+.dark-mode {
+  background-color: #111;
+  color: white;
 }
