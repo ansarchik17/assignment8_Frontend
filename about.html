@@ -6,44 +6,86 @@
   <title>About - Rubik's Cube Store</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
-  <div class="page-container">
-    <header class="bg-dark text-white text-center py-3">
-      <h1>Rubik's Cube Store</h1>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="page-container d-flex flex-column min-vh-100">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
         <div class="container">
-          <a class="navbar-brand" href="index.html">Home</a>
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="info.html">Info</a></li>
-          </ul>
+          <img src="img/logovo.png" class="logo" width="70" height="50" alt="Rubik's Cube Logo">
+          <a class="navbar-brand fw-bold" href="index.html">Rubik's Cube Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+              <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="info.html">Info</a></li>
+              <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
-    <main class="container mt-4 flex-fill">
-      <h2>About Our Store</h2>
-      <p>We love puzzles — especially the Rubik’s Cube! Our store was created by cube enthusiasts who believe that solving a cube is more than just a hobby — it’s a way to train your brain, improve memory, and have fun at the same time.</p>
-      <p>At Rubik’s Cube Store, we offer a wide variety of cubes for everyone:</p>
-      <ul>
-        <li>Beginners who want to learn the basics of solving.</li>
-        <li>Speedcubers aiming to improve their times.</li>
-        <li>Collectors who love unique designs and special editions.</li>
-      </ul>
-      <p>We carefully select only the best cubes from trusted brands that guarantee smooth rotation, durable stickers, and bright colors.
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h1>About Our Store</h1>
+      <p>We love puzzles — especially the Rubik’s Cube! Training your brain, improving memory, and having fun all at once.</p>
+    </section>
 
-        Our mission is to help more people discover the fun and challenge of cubing. Whether you’re a student, a professional, or a puzzle lover, we believe there’s a perfect cube for you!
-        
-        Join our growing community of cubers — solve, collect, and compete with passion!</p>
+    <!-- About Content -->
+    <main class="container about-section flex-fill">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Why Choose Rubik’s Cube Store?</h2>
+        <p>We’re more than just a store — we’re a community of cubers passionate about sharing the joy of solving.</p>
+      </div>
+
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <div class="card text-center p-4">
+            <h4 class="fw-bold">For Beginners</h4>
+            <p>Learn the basics with easy-to-handle cubes and helpful guides to get you started smoothly.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center p-4">
+            <h4 class="fw-bold">For Speedcubers</h4>
+            <p>Upgrade to high-performance cubes designed for lightning-fast turns and world-class records.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center p-4">
+            <h4 class="fw-bold">For Collectors</h4>
+            <p>Discover limited editions, creative shapes, and unique designs to enhance your cube collection.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <p class="lead">We carefully select only the best cubes from trusted brands that guarantee smooth rotation, durable stickers, and bright colors.</p>
+        <p class="mb-0">Our mission: to help more people discover the fun and challenge of cubing.</p>
+      </div>
     </main>
 
-    <footer>
-      <p>2025 Rubik's Cube Store</p>
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+      <div class="text-center">
+        <p class="mb-0">
+          © 2025 Rubik's Cube Store — Follow us on
+          <a href="https://www.instagram.com/ansaar_017" target="_blank" rel="noopener noreferrer" class="ms-1">
+            <img src="img/Instagram_icon.jpg" alt="Instagram" style="width: 22px; height: 22px; vertical-align: middle; border-radius: 5px;">
+          </a>
+        </p>
+      </div>
     </footer>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/javascript.js"></script>
 </body>
 </html>
